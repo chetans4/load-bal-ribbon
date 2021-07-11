@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: spring-cloud-ribbon
+
+server:
+  port: 8888
+
+ping-test:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8201,localhost:8202
+    ServerListRefreshInterval: 15000
